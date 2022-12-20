@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Multi-step form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="multi-step">
+    <div class="step-list step-list--mobile">
+      <div class="step-list__num">1</div>
+      <div class="step-list__num">2</div>
+      <div class="step-list__num">3</div>
+      <div class="step-list__num">4</div>
+    </div>
+    <div class="multi-step__container">
+      <div class="step-list step-list--desktop">
+        <div class="step-list__item">
+          <div class="step-list__num">1</div>
+          <div class="step-list__info">
+            <div class="step-list__step">step 1</div>
+            <div class="step-list__name">Your info</div>
+          </div>
+        </div>
+        <div class="step-list__item">
+          <div class="step-list__num">2</div>
+          <div class="step-list__info">
+            <div class="step-list__step">step 2</div>
+            <div class="step-list__name">Select plan</div>
+          </div>
+        </div>
+        <div class="step-list__item">
+          <div class="step-list__num">3</div>
+          <div class="step-list__info">
+            <div class="step-list__step">step 3</div>
+            <div class="step-list__name">Add-ons</div>
+          </div>
+        </div>
+        <div class="step-list__item">
+          <div class="step-list__num">4</div>
+          <div class="step-list__info">
+            <div class="step-list__step">step 4</div>
+            <div class="step-list__name">Summary</div>
+          </div>
+        </div>
+      </div>
+      <form action="" class = "form">
+
+        <!-- Step 1 -->
+
+        <div class="form__item form__item--active">
+          <div class="form__title">Personal info</div>
+          <div class="form__sub-title">Please provide your name, email address, and phone number.</div>
+          <div class="form-group">
+            <label for="" class="form-label">
+              <span class="form-label__name">Name</span>
+              <span class="form-label__required">This field is required</span>
+            </label>
+            <input type="text" class="form-input" placeholder="e.g. Stephen King">
+          </div>
+          <div class="form-group">
+            <label for="" class="form-label">
+              <span class="form-label__name">Email Address</span>
+              <span class="form-label__required">This field is required</span>
+            </label>
+            <input type="email" class="form-input" placeholder="e.g. stephenking@lorem.com">
+          </div>
+          <div class="form-group">
+            <label for="" class="form-label">
+              <span class="form-label__name">Phone Number</span>
+              <span class="form-label__required">This field is required</span>
+            </label>
+            <input type="tel" class="form-input" placeholder="e.g. +1 234 567 890">
+          </div>
+          <div class="form-btn__next">Next Step</div>
+        </div>
+
+        <!-- Step 2 -->
+
+        <div class="form__item ">
+          <div class="form__title">Select your plan</div>
+          <div class="form__sub-title">You have the option of monthly or yearly billing.</div>
+          <div class="form-options">
+            <div class="form-options__item">
+              <img class="form-icon" src="./assets/images/icon-arcade.svg">
+              <div>
+                <div class="form-name">Arcade</div>
+                <div class="form-text">$9/mo</div>
+              </div>
+
+            </div>
+            <div class="form-options__item">
+              <img class="form-icon" src="./assets/images/icon-advanced.svg">
+              <div>
+                <div class="form-name">Advanced</div>
+                <div class="form-text">$12/mo</div>     
+              </div>
+
+            </div>
+            <div class="form-options__item">
+              <img class="form-icon" src="./assets/images/icon-pro.svg">
+              <div>
+                <div class="form-name">Pro</div>
+                <div class="form-text">$15/mo</div>
+              </div>
+
+            </div>
+          </div>
+          <div class="form-options-text">Please select one plan!</div>
+          <div class="form-my">
+            <div class="form-my__option form-my__option--selected">Monthly</div>
+            <label class="switch">
+              <input type="checkbox">
+              <span class="slider"></span>
+            </label>
+            <div class="form-my__option ">Yearly</div>
+          </div>
+          <div class="form-btn__prev">Go Back</div>
+          <div class="form-btn__next">Next Step</div>
+        </div>
+
+        <!-- Step 3 -->
+
+        <div class="form__item">
+          <div class="form__title">Pick add-ons</div>
+          <div class="form__sub-title">Add-ons help enhance your gaming experience.</div>
+          <div class="form-add-ons">
+            <label class="form-add-ons__item">
+              <input type="checkbox">
+              <div class="form-add-ons__checkbox"></div>
+              <span class="form-add-ons__info">
+                <span class="form-name">Online service</span>
+                <span class="form-text">Access to multiplayer games</span>
+              </span>
+              <span class="form-add-ons__price"></span>
+            </label>
+            <label class="form-add-ons__item">
+              <input type="checkbox">
+              <div class="form-add-ons__checkbox"></div>
+              <span class="form-add-ons__info">
+                <span class="form-name">Larger storage</span>
+                <span class="form-text">Extra 1TB of cloud save</span>
+              </span>
+              <span class="form-add-ons__price"></span>
+            </label>
+            <label class="form-add-ons__item">
+              <input type="checkbox">
+              <div class="form-add-ons__checkbox"></div>
+              <span class="form-add-ons__info">
+                <span class="form-name">Customizable profile</span>
+                <span class="form-text">Custom theme on your profile</span>
+              </span>
+              <span class="form-add-ons__price"></span>
+            </label>
+          </div>
+          <div class="form-btn__prev">Go Back</div>
+          <div class="form-btn__next">Next Step</div>
+        </div>
+
+        <!-- Step 4 -->
+
+        <div class="form__item">
+          <div class="form__title">Finishing up</div>
+          <div class="form__sub-title">Double-check everything looks OK before confirming.</div>
+          <div class="form-total">
+            <div class="form-total__options-chosed">
+              <div class="form-total__options-chosed__info">
+                <div class="form-total__options-chosed__name"></div>
+                <a class="form-total__options-chosed__change">Change</a>
+              </div>
+              <div class="form-total__options-chosed__price"></div>
+            </div>
+            <div class="form-total__add-ons">
+            </div>
+          </div>
+          <div class="form-total-price">
+            <div class="form-total-price__text"></div>
+            <div class="form-total-price__value"></div>
+          </div>
+          <div class="form-btn__prev">Go Back</div>
+          <div class="form-btn__confirm">Confirm</div>
+        </div>
+
+        <!-- Step 5 -->
+        
+        <div class="form__item ">
+          <div class="form-container">
+            <img src="./assets/images/icon-thank-you.svg" alt="icon thank you">
+            <div class="form__title">Thank you!</div>
+            <div class="form__sub-title">  
+              Thanks for confirming your subscription! We hope you have fun 
+              using our platform. If you ever need support, please feel free 
+              to email us at support@loremgaming.com.
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+
+  </div>
+  <div class="footer">
+    <div class="footer__item footer__item--active">
+      <div class="form-btn__next">Next</div>
+    </div>
+    <div class="footer__item ">
+      <div class="form-btn__prev">Go Back</div>
+      <div class="form-btn__next">Next</div>
+    </div>
+    <div class="footer__item">
+      <div class="form-btn__prev">Go Back</div>
+      <div class="form-btn__next">Next</div>
+    </div>
+    <div class="footer__item">
+      <div class="form-btn__prev">Go Back</div>
+      <div class="form-btn__confirm">Confirm</div>
+    </div>
+</div>
+
+  
+
+
+
+  <!-- Step 5 end -->
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script src="./main.js"></script>
+</body>
+</html>
